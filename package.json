@@ -1,0 +1,10 @@
+{
+  "name": "discordbot",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Ivan Odintsov",
+  "main": "app.js",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
