@@ -15,7 +15,7 @@ function fetchRecursive(msg, limit, after, before) {
         list.forEach(function(item) {
             if (item.id > after) {
                 if (!msg.deleted)
-                    data[msg.channelID].messages[item.member.displayName] = item.member.displayName + ': ' + item.content + ' (' + item.url + ')';
+                    data[msg.channelID].messages[item.member.user.id] = item.member.displayName + ': ' + item.content + ' (' + item.url + ')';
             } else {
                 cancel = true;
             }
