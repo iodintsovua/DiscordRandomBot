@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
+const Auth = require('./auth.json');
 
 const bot = new Discord.Client();
-bot.login('');
+bot.login(Auth.token);
 
 var data = {};
 function fetchRecursive(msg, limit, after, before) {
